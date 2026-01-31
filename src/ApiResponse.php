@@ -3,6 +3,8 @@
 namespace Maimalee\LaravelApiResponse;
 
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
+use Illuminate\Http\Resources\Json\JsonResource;
+use Illuminate\Http\Resources\Json\ResourceCollection;
 
 class ApiResponse
 {
@@ -22,6 +24,16 @@ class ApiResponse
             return $this->paginate($data, $message);
         }
 
+        // Auto-detect ResourceCollection
+        if ($data instanceof ResourceCollection) {
+            $data = $data->response()->getData(true);
+        }
+
+        // Auto-detect single Resource
+        if ($data instanceof JsonResource) {
+            $data = $data->resolve();
+        }
+
         return response()->json([
             $this->key('status')  => 'success',
             $this->key('message') => $message,
@@ -29,6 +41,7 @@ class ApiResponse
             $this->key('meta')    => $this->meta,
         ], $code);
     }
+
 
     // Error response
     public function error(string $message, int $code = 400, array $errors = [])
@@ -50,10 +63,17 @@ class ApiResponse
     // Pagination helper
     public function paginate(LengthAwarePaginator $paginator, string $message = 'Data fetched')
     {
+        $items = $paginator->items();
+
+        // If the items are a ResourceCollection
+        if ($items instanceof ResourceCollection) {
+            $items = $items->response()->getData(true);
+        }
+
         return response()->json([
             $this->key('status')  => 'success',
             $this->key('message') => $message,
-            $this->key('data')    => $paginator->items(),
+            $this->key('data')    => $items,
             $this->key('meta')    => [
                 'pagination' => [
                     'total'        => $paginator->total(),
@@ -65,4 +85,5 @@ class ApiResponse
             ],
         ]);
     }
+
 }
