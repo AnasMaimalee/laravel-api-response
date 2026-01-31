@@ -5,6 +5,7 @@ namespace Maimalee\LaravelApiResponse;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Maimalee\LaravelApiResponse\Exceptions\ApiException;
+use Maimalee\LaravelApiResponse\Middleware\WrapApiResponse;
 
 class ApiResponseServiceProvider extends ServiceProvider
 {
@@ -36,5 +37,7 @@ class ApiResponseServiceProvider extends ServiceProvider
                 $e->getErrors()
             );
         });
+
+        $this->app['router']->pushMiddlewareToGroup('api', WrapApiResponse::class);
     }
 }
