@@ -409,7 +409,7 @@ class ComposerStaticInitfca83ea8840bc6c2ce2a36fa6b1b5ce7
         ),
         'Maimalee\\LaravelApiResponse\\Tests\\' =>
         array (
-            0 => __DIR__ . '/../..' . '/Tests',
+            0 => __DIR__ . '/../..' . '/tests',
         ),
         'Maimalee\\LaravelApiResponse\\' =>
         array (

@@ -60,7 +60,7 @@ return array(
     'Nette\\' => array($vendorDir . '/nette/schema/src', $vendorDir . '/nette/utils/src'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'Mockery\\' => array($vendorDir . '/mockery/mockery/library/Mockery'),
-    'Maimalee\\LaravelApiResponse\\Tests\\' => array($baseDir . '/Tests'),
+    'Maimalee\\LaravelApiResponse\\Tests\\' => array($baseDir . '/tests'),
     'Maimalee\\LaravelApiResponse\\' => array($baseDir . '/src'),
     'League\\Uri\\' => array($vendorDir . '/league/uri', $vendorDir . '/league/uri-interfaces'),
     'League\\MimeTypeDetection\\' => array($vendorDir . '/league/mime-type-detection/src'),

@@ -3,7 +3,7 @@
         'name' => 'maimalee/laravel-api-response',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '94b7bb1bee47004b392e6282ccf18df7cf2a92d4',
+        'reference' => '7317f8c8053532bd98b8e0077574de93f1d20f75',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -496,7 +496,7 @@
         'maimalee/laravel-api-response' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '94b7bb1bee47004b392e6282ccf18df7cf2a92d4',
+            'reference' => '7317f8c8053532bd98b8e0077574de93f1d20f75',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
