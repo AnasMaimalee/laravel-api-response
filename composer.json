@@ -4,10 +4,14 @@
     "type": "library",
     "license": "MIT",
     "autoload": {
-        "psr-4": {
-            "Maimalee\\LaravelApiResponse\\": "src/"
-        }
+    "psr-4": {
+        "Maimalee\\LaravelApiResponse\\": "src/"
     },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+
     "authors": [
         {
             "name": "AnasMaimalee",

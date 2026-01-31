@@ -14,6 +14,7 @@ class ComposerStaticInitfca83ea8840bc6c2ce2a36fa6b1b5ce7
         '60799491728b879e74601d83e38b2cad' => __DIR__ . '/..' . '/illuminate/collections/helpers.php',
         'f625ee536139dfb962a398b200bdb2bd' => __DIR__ . '/..' . '/illuminate/support/functions.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
+        '4883b627971fda1589b31d3beb0e206e' => __DIR__ . '/../..' . '/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (

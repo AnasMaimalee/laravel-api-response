@@ -13,4 +13,5 @@ return array(
     '60799491728b879e74601d83e38b2cad' => $vendorDir . '/illuminate/collections/helpers.php',
     'f625ee536139dfb962a398b200bdb2bd' => $vendorDir . '/illuminate/support/functions.php',
     '72579e7bd17821bb1321b87411366eae' => $vendorDir . '/illuminate/support/helpers.php',
+    '4883b627971fda1589b31d3beb0e206e' => $baseDir . '/src/helpers.php',
 );
