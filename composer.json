@@ -1,0 +1,23 @@
+{
+    "name": "maimalee/laravel-api-response",
+    "description": "A Laravel package for consistent and configurable API responses with built-in exception handling.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Maimalee\\LaravelApiResponse\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "AnasMaimalee",
+            "email": "anasment6@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+    "php": "^8.1",
+    "illuminate/support": "^10.0|^11.0"
+}
+
+}
