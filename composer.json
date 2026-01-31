@@ -9,7 +9,8 @@
             "email": "anasment6@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "php": "^8.1",
         "illuminate/support": "^10.0|^11.0"
@@ -28,7 +29,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Maimalee\\LaravelApiResponse\\Tests\\": "Tests/"
+            "Maimalee\\LaravelApiResponse\\Tests\\": "tests/"
         }
     }
 }
